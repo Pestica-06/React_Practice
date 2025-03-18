@@ -27,11 +27,6 @@ export default function Shop() {
           <a href="#">Blog</a>
           <a href="#">About Us</a>
         </nav>
-        <div className="search-cart">
-          <input type="text" placeholder="Search Product" className="search-bar" />
-          <span className="icon">🔍</span>
-          <span className="icon">🛒</span>
-        </div>
       </header>
       
       <h1 className="shop-title">Shop All Products</h1>

@@ -1,0 +1,144 @@
+/* Global reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Main container style */
+  div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 75%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #5c6bc0;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #5c6bc0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3f4a94;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Todo List styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  li button {
+    padding: 6px 12px;
+    background-color: #ff4e4e;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #f44336;
+  }
+  
+  li button:focus {
+    outline: none;
+  }
+  
+  /* Edit button style */
+  li button:first-of-type {
+    background-color: #ffa726;
+  }
+  
+  li button:first-of-type:hover {
+    background-color: #fb8c00;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 500px) {
+    div {
+      width: 100%;
+      padding: 25px 15px;
+    }
+  
+    input {
+      width: 60%;
+    }
+  
+    button {
+      padding: 10px 15px;
+    }
+  }
+  
