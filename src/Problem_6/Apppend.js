@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 function Problem6() {
   const [inputValue, setInputValue] = useState("");
-  const [numbers, setNumbers] = useState([]); // Keep numbers as an array
-
+  const [numbers, setNumbers] = useState([]); 
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
@@ -17,8 +16,7 @@ function Problem6() {
       return;
     }
 
-    setNumbers([...numbers, num]); // Use spread operator to update array
-    setInputValue("");
+    setNumbers([...numbers, num]); 
   };
 
   return (
@@ -41,7 +39,7 @@ function Problem6() {
       </p>
       <input
         type="text"
-        value={numbers.join(", ")} // Join array into a string for display
+        value={numbers.join(", ")} 
         readOnly
         style={{
           width: "200px",

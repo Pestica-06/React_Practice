@@ -1,13 +1,12 @@
 import React from "react";
-import TodoApp from "./ToDo/TodoForm";
-
+import Dashboard from "./Weekly_assesment/Dashboard";
 
 
 
 const App = () => {
   return (
     <div >
-      <TodoApp/>
+      <Dashboard />
     </div>
   );
 };

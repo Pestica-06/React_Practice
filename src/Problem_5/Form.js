@@ -8,9 +8,12 @@ export default function Answer() {
     city: '',
     food: ''
   });
+  // const [name,setName]=useState('');
+
 
   function handling() {
     console.log(data); 
+    // console.log(name);
   }
 
   return (
@@ -30,6 +33,10 @@ export default function Answer() {
             return { ...prev, name: e.target.value };
           })
         }
+        // onChange={(e)=>{
+        //   setName(e.target.value)
+          
+        // }}
       />
       <br />
 
@@ -43,6 +50,7 @@ export default function Answer() {
         autoComplete="off"
         onChange={(e) =>
           setData((prev) => {
+            // console.log(e.target.value)
             return { ...prev, email: e.target.value };
           })
         }
@@ -59,6 +67,7 @@ export default function Answer() {
         autoComplete="off"
         onChange={(e) =>
           setData((prev) => {
+            // console.log(e.target.value)
             return { ...prev, phone: e.target.value };
           })
         }
@@ -73,8 +82,10 @@ export default function Answer() {
         required
         onChange={(e) =>
           setData((prev) => {
+            // console.log(e.target.value)
             return { ...prev, food: e.target.value };
           })
+         
         }
       >
         <option value="">Select your favorite food</option>
