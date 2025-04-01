@@ -1,14 +1,11 @@
-import React from "react";
-import Dashboard from "./Weekly_assesment/Dashboard";
-
-
-
-const App = () => {
-  return (
-    <div >
-      <Dashboard />
-    </div>
-  );
-};
-
-export default App;
+import "./App.css"; 
+import GameBoard from "./Project/GameBoard"; 
+function App() { 
+    return ( 
+        <div className="App"> 
+            <GameBoard /> 
+        </div> 
+    ); 
+} 
+  
+export default App; 
